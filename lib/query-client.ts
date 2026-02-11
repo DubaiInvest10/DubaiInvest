@@ -6,15 +6,8 @@ import { QueryClient, QueryFunction } from "@tanstack/react-query";
  * @returns {string} The API base URL
  */
 export function getApiUrl(): string {
-  let host = process.env.EXPO_PUBLIC_DOMAIN;
-
-  if (!host) {
-    throw new Error("EXPO_PUBLIC_DOMAIN is not set");
-  }
-
-  let url = new URL(`https://${host}`);
-
-  return url.href;
+  // Toujours utiliser l'URL de Render pour les builds APK/Production
+  return "https://dubai-invest.onrender.com";
 }
 
 async function throwIfResNotOk(res: Response) {
