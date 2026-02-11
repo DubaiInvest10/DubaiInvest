@@ -2,6 +2,7 @@
   "expo": {
     "name": "Dubai Invest",
     "slug": "dubai-invest",
+    "owner": "dubaiinvest",
     "version": "1.0.0",
     "sdkVersion": "54.0.0",
     "orientation": "portrait",
@@ -46,7 +47,6 @@
     },
     "extra": {
       "eas": {
-        "projectId": "10677b76-37fa-41a8-bb95-0203fa525136"
       }
     }
   }
